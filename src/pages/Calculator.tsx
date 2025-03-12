@@ -32,9 +32,14 @@ const Calculator = () => {
             </p>
             
             <div className="space-y-8">
-              <p className="text-lg font-medium">Calculator coming soon...</p>
+              <Link 
+                to="/printing-config" 
+                className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary/90 transition-colors"
+              >
+                Configure Your 3D Printing
+              </Link>
               <p className="text-gray-600">
-                We're currently developing this feature. Check back soon for the complete calculator functionality.
+                Click the button above to start configuring your 3D printing project.
               </p>
             </div>
           </div>
