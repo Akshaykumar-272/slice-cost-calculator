@@ -19,7 +19,7 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="flex justify-center mb-16 animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
+          <div className="flex justify-center mb-16">
             <Link 
               to="/printing-config" 
               className="px-8 py-3 bg-primary rounded-lg text-white font-medium transition-all hover:shadow-lg hover:bg-primary/90 flex items-center justify-center"
@@ -29,10 +29,10 @@ const HeroSection = () => {
             </Link>
           </div>
           
-          <div className="relative w-full max-w-4xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '0.6s' }}>
+          <div className="relative w-full max-w-4xl mx-auto">
             <div className="aspect-video rounded-xl overflow-hidden shadow-2xl">
               <img 
-                src="/placeholder.svg" 
+                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
                 alt="3D printing slice calculator" 
                 className="w-full h-full object-cover"
               />
