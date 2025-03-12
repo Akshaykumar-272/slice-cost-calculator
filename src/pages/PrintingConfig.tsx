@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Upload, Printer, ChevronDown, Play, Eye, DollarSign, Clock } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PaymentFormDialog from '@/components/PaymentFormDialog';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -17,6 +18,7 @@ const PrintingConfig = () => {
   const [bedTemperature, setBedTemperature] = useState('60');
   const [material, setMaterial] = useState('PLA');
   const [fileName, setFileName] = useState('');
+  const [isPaymentFormOpen, setIsPaymentFormOpen] = useState(false);
 
   useEffect(() => {
     // Scroll to top when the page loads
@@ -77,7 +79,11 @@ const PrintingConfig = () => {
                 Preview
               </Button>
               
-              <Button variant="outline" className="flex items-center gap-2 border-primary text-primary hover:bg-primary/10">
+              <Button 
+                variant="outline" 
+                className="flex items-center gap-2 border-primary text-primary hover:bg-primary/10"
+                onClick={() => setIsPaymentFormOpen(true)}
+              >
                 <DollarSign className="w-4 h-4" />
                 Payment
               </Button>
@@ -197,6 +203,12 @@ const PrintingConfig = () => {
         </div>
       </main>
       <Footer />
+
+      {/* Payment Form Dialog */}
+      <PaymentFormDialog 
+        isOpen={isPaymentFormOpen}
+        onClose={() => setIsPaymentFormOpen(false)}
+      />
     </div>
   );
 };
