@@ -69,16 +69,17 @@ const PrintingConfig = () => {
                     <Play className="w-4 h-4" />
                     Visualizing
                   </DropdownMenuItem>
-                  <DropdownMenuItem className="flex items-center gap-2">
-                    <DollarSign className="w-4 h-4" />
-                    Payment
-                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               
               <Button variant="secondary" className="flex items-center gap-2">
                 <Eye className="w-4 h-4" />
                 Preview
+              </Button>
+              
+              <Button variant="outline" className="flex items-center gap-2 border-primary text-primary hover:bg-primary/10">
+                <DollarSign className="w-4 h-4" />
+                Payment
               </Button>
             </div>
             

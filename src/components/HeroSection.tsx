@@ -19,7 +19,7 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-16 animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
+          <div className="flex justify-center mb-16 animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
             <Link 
               to="/printing-config" 
               className="px-8 py-3 bg-primary rounded-lg text-white font-medium transition-all hover:shadow-lg hover:bg-primary/90 flex items-center justify-center"
@@ -27,12 +27,6 @@ const HeroSection = () => {
               Try Me
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
-            <a 
-              href="#features" 
-              className="px-8 py-3 bg-white/80 border border-gray-200 rounded-lg text-gray-700 font-medium transition-all hover:bg-white"
-            >
-              Learn More
-            </a>
           </div>
           
           <div className="relative w-full max-w-4xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '0.6s' }}>
